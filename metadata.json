@@ -1,0 +1,6 @@
+{
+  "name": "Omniframe 3D Asset & Remotion Studio",
+  "description": "Cel-shaded Anime & Lo-Fi 3D Asset Pipeline and deterministic Remotion video composition studio — Asset #01: Main Street Road Section 1 Primary Ground Plane.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
