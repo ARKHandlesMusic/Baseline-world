@@ -92,7 +92,9 @@ const InnerR3FSceneContent: React.FC<GlbCharacterStageR3FProps> = ({
 
   // Configure sRGB & ACES Filmic Tone Mapping on the R3F WebGLRenderer
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/immutability
     gl.outputColorSpace = THREE.SRGBColorSpace;
+    // eslint-disable-next-line react-hooks/immutability
     gl.toneMapping = THREE.ACESFilmicToneMapping;
     gl.toneMappingExposure = 1.12;
   }, [gl]);
@@ -449,6 +451,7 @@ const InnerR3FSceneContent: React.FC<GlbCharacterStageR3FProps> = ({
           fps,
           sunglasses: shadesOn,
         });
+        // eslint-disable-next-line react-hooks/immutability
         activeModeRigBundle.policeOfficerRig.rootGroup.rotation.y =
           Math.sin(frame * 0.025) * 0.25;
       }
@@ -506,6 +509,7 @@ const InnerR3FSceneContent: React.FC<GlbCharacterStageR3FProps> = ({
           sunglasses: shadesOn,
           countdownValue: signOverride,
         });
+        // eslint-disable-next-line react-hooks/immutability
         activeModeRigBundle.activeInspectorRig.rootGroup.rotation.y =
           (inspectedFacing === 'left' ? -0.35 : 0.35) +
           THREE.MathUtils.degToRad(turntableYaw);
